@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>P2P File Sharing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Uncomment to use external CSS
+        <link rel="stylesheet" href="PATH/TO/EXTERNAL/STYLES.CSS">
+        -->
+
+        <style type="text/css">
+            html, body {
+                font-family: sans-serif;
+            }
+            .question {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>P2P File Sharing</h1>
+        <p>
+            
+        </p>
+
+        <h2>Survey</h2>
+        <form action="http://httpbin.org/post" method="post">
+            <p>
+                <!-- Nominal (Qualitative) data -->
+                <span class="question">Year level:</span>
+                <select name="year" required>
+                    <option></option>
+                    <option value="7">Year 7</option>
+                    <option value="8">Year 8</option>
+                    <option value="9">Year 9</option>
+                    <option value="10">Year 10</option>
+                    <option value="11">Year 11</option>
+                    <option value="12">Year 12</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Parent">Parent</option>
+                    <option value="Other">Other</option>
+                </select>
+            </p>
+            <p>
+                <!-- Interval (Quantitative) data -->
+                <span class="question">Age:</span>
+                <input type="number" name="age" min="0" required>
+            </p>
+            <p>
+                <!-- Nominal (Qualitative) data -->
+                <span class="question" >Gender:</span>
+                <label><input type="radio" name="gender" value="female" >Female</label>
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="other">Other</label>
+            </p>
+            <p>
+                <!-- Ordinal (Qualitative) data -->
+                <span class="question" required>Do you feel like your connection to the school network Is secure?</span>
+                <br/>
+                <label><input type="radio" name="secure" value="many">Not at all</label>
+                <label><input type="radio" name="secure" value="daily">Somewhat</label>
+                <label><input type="radio" name="secure" value="weekly">Quite well</label>
+                <label><input type="radio" name="secure" value="monthly">Extremely well</label>
+                <label><input type="radio" name="secure" value="less">I do not know</label>
+            </p>
+            <p>
+                <!-- Ordinal (Qualitative) data -->
+                <span class="question">If you download content illegally why do you do it?</span>
+                <br/>
+                <label><input type="radio" name="WhyIll" value="many">Convenience</label>
+                <label><input type="radio" name="WhyIll" value="daily">To try before buying</label>
+                <label><input type="radio" name="WhyIll" value="weekly">Price</label>
+                <label><input type="radio" name="WhyIll" value="monthly">I do not</label>
+                <label><input type="radio" name="WhyIll" value="less">Other</label>
+            </p>
+                       <p>
+                <!-- Ordinal (Qualitative) data -->
+                <span class="question">Have you ever (illegally) used P2P file sharing e.g. torrenting, pirating content </span>
+                <br/>
+                <label><input type="radio" name="useill" value="many">Yes</label>
+                <label><input type="radio" name="useill" value="daily">No</label>
+                <label><input type="radio" name="useill" value="weekly">Not sure</label>
+
+            </p>
+                       <p>
+                <!-- Ordinal (Qualitative) data -->
+                <span class="question">What is your stance on copyright law? </span>
+                <br/>
+                <label><input type="radio" name="coplaw" value="many">Soft</label>
+                <label><input type="radio" name="coplaw" value="daily">Moderate</label>
+                <label><input type="radio" name="coplaw" value="weekly">Strong</label>
+                <label><input type="radio" name="coplaw" value="monthly">I dont know</label>
+                <label><input type="radio" name="coplaw" value="less">Enter Other</label>
+            </p>
+                       <p>
+                <!-- Ordinal (Qualitative) data -->
+                <span class="question">Do you personally know anybody who has ever (illegally) used P2P file sharing e.g. torrenting, pirating content?</span>
+                <br/>
+                <label><input type="radio" name="knowill" value="many">Yes</label>
+                <label><input type="radio" name="knowill" value="daily">No</label>
+                <label><input type="radio" name="knowill" value="weekly">Maybe</label>
+
+            </p>
+                       <p>
+                <!-- Ordinal (Qualitative) data -->
+                <span class="question">What type of media, if any, have you downloaded the most (illegally). If you have not what media would you be most likely to download the most?</span>
+                <br/>
+                <label><input type="radio" name="medill" value="many">Music</label>
+                <label><input type="radio" name="medill" value="daily">Tv/Movies</label>
+                <label><input type="radio" name="medill" value="weekly">Games</label>
+                <label><input type="radio" name="medill" value="monthly">Software </label>
+                <label><input type="radio" name="medill" value="less">Other</label>
+            </p>
+                       <p>
+                <!-- Ordinal (Qualitative) data -->
+                <span class="question">Do you think that most of the online paid content that you have access to is fairly priced.</span>
+                <br/>
+                <label><input type="radio" name="conprice" value="many">Not at all</label>
+                <label><input type="radio" name="conprice" value="daily">Some what</label>
+                <label><input type="radio" name="conprice" value="weekly">Mostly</label>
+                <label><input type="radio" name="conprice" value="monthly">All</label>
+                <label><input type="radio" name="conprice" value="less">I have never bought any media/software online</label>
+            </p>
+                        <p>
+                <!-- Ordinal (Qualitative) data -->
+                <span class="question">What penalty, if any do you think there should be for people that download content illegally?</span>
+                <br/>
+                <label><input type="radio" name="penalty" value="many">Community service</label>
+                <label><input type="radio" name="penalty" value="daily">Jail time</label>
+                <label><input type="radio" name="penalty" value="weekly">Fine</label>
+                <label><input type="radio" name="penalty" value="monthly">Other</label>
+                <label><input type="radio" name="interact" value="less">None</label>
+            </p>
+                        <p>
+                <!-- Ordinal (Qualitative) data -->
+                <span class="question">Why do you think most people download content illegally? </span>
+                <br/>
+                <label><input type="radio" name="Otherill" value="many">Convenience</label>
+                <label><input type="radio" name="Otherill" value="daily">To try before buying</label>
+                <label><input type="radio" name="Otherill" value="weekly">Price</label>
+                <label><input type="radio" name="Otherill" value="monthly">Other</label>
+        
+            </p>
+
+                        <p>
+                <!-- Ratio (Quantitative) data -->
+                <span class="question">What do you think is a reasonable amount for daily quota (school)?</span>
+                <br/>
+                <input type="number" name="quota" min="0">
+            </p>
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- Uncomment to use external JavaScript
+        <script src="PATH/TO/EXTERNAL/SCRIPT.JS"></script>
+        -->
+
+        <script>
+            /* Your JS goes here */
+        </script>
+    </body>
+</html>
